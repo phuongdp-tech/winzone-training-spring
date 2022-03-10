@@ -1,2 +1,1 @@
-# winzone-training-spring
-All repository training spring in winzone.vn
+# All repository training spring in winzone.vn
