@@ -35,7 +35,7 @@ public class AuthenticationService implements UserDetailsService {
 
     private org.springframework.security.core.userdetails.User createSpringSecurityUser(Account account) {
         List<GrantedAuthority> grantedAuthorities =
-                Collections.singletonList(new SimpleGrantedAuthority(account.getAuthority().name()));
+                Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + account.getAuthority().name()));
         return new org.springframework.security.core.userdetails.User(account.getAccount(), account.getPassword(), grantedAuthorities);
     }
 }
